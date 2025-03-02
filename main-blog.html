@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        .poppins-regular{
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-200 min-h-screen py-5 poppins-regular">
+    <header class="container mx-auto  bg-white p-6 rounded-xl  poppins-thin">
+        <nav class="flex justify-between items-center  ">
+            <div class="flex justify-center items-center gap-2">
+                <img src="./assets/logo.png" alt="">
+                <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div class="flex justify-center items-center gap-9">
+                <button id="backToHome" class="btn btn-primary">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+    <section class="container mx-auto ">
+        <h1 class="text-center text-2xl font-bold my-5">Blog</h1>
+
+        <div class="bg-white p-6 rounded-lg">
+            <h1 class="font-bold text-xl py-8">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <hr class="border-dashed pb-8">
+            <p>
+                DOM can be selected in various ways in JavaScript. DOM can be selected using tagName, Id, ClassName, quarySelector, quarySelectotAll, etc.
+            </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg mt-10">
+            <h1 class="font-bold text-xl py-8">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <hr class="border-dashed pb-8">
+            <p>The difference between innerhtml, innertext and textContent is:
+                Through innerHtml we get the content inside an element with Html tag and parse the Html tag.
+                Through innertext we get all the visible content inside an element. Using textContent we get all the visible and invisible text inside the element.
+            </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg mt-10">
+            <h1 class="font-bold text-xl py-8">Question-3: What is event delegation in the DOM?</h1>
+            <hr class="border-dashed pb-8">
+            <p>Event delegation in the DOM is a lot like event bubbling. Instead of adding an event listener to each child separately, you can add an event listener to the parent and dynamically add or remove elements based on the event listener's command.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg mt-10">
+            <h1 class="font-bold text-xl py-8">Question-4: What is event bubbling in the DOM?</h1>
+            <hr class="border-dashed pb-8">
+            <p>Event bubbling routes an event to its target. This is how it works:
+
+                When an element (such as a button) is clicked, an event is routed to that element.
+
+                If an event handler is set for the element, the event handler is triggered.
+
+                The event then "bubbles" to the parent element.
+
+                If an event handler is set for the parent, this event handler is triggered.
+
+                The event continues to bubble until it reaches the top (the document element). We can use stopPropaation() to stop this. This will stop the bubbling.
+            </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg mt-10">
+            <h1 class="font-bold text-xl py-8">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <hr class="border-dashed pb-8">
+            <p>We can create, add or remove an element using JavaScript. We can add an element using appendChild(). We can create an element using createElement(). We can also remove an element using removeChild(). In this way, we can create, add or remove an element in JavaScript.</p>
+        </div>
+    </section>
+    <script src="./script/toggle.js"></script>
+</body>
+</html>
