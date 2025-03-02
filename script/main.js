@@ -17,7 +17,7 @@ for (let i = 0; i < buttons.length; i++) {
             alert("Board Updated Successfully!")
         }
         if (taskAssigned <= 1) {
-            alert("Congrats!! you have successfully completed all the current task");
+            alert("Congrates!! you have successfully completed all the current task");
         }
         document.getElementById("task-assigned").innerText = convertTaskAssigned - 1;
         document.getElementById("mark-number").innerText = convertMarkOfNumber + 1;
